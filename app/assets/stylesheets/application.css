@@ -16,21 +16,56 @@
  body, html{
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
+  background-color: #DEDBD0;
  }
 .bg-navbar{
-  position: relative;
+  background-color: transparent !important;
 }
+.fdb-block {
+  background-color: #DEDBD0 !important;
+}
+.fdb-block-index {
+  padding-top: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 650px;
+}
+
  div {
    display: block;
  }
 .img-bg{
-  background-image: url(../assets/images/bg.png);
+  padding-top: -1rem;
+  top: 0;
+  opacity: 0.8;
   position: relative;
-  opacity: 0.75;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
   min-height: 650px;
+}
+.mx-2:hover {
+  background-color: transparent !important;
+  color: black !important;
+}
+
+
+ul li a{
+  background-color: transparent !important;
+  text-decoration: none !important;
+  color:black !important;
+}
+.card-header {
+  color: black;
+  font-weight: 300;
+  font-size: 1.1rem; 
+}
+.card {
+  border-radius: 0.5rem;
 }
