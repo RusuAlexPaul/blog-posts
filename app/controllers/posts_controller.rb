@@ -1,4 +1,7 @@
 class PostsController < InheritedResources::Base
+  def index
+    @posts = Posts.all
+  end
 
   private
 

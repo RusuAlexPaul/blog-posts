@@ -2,6 +2,7 @@ class ArticlesController < ApplicationController
   
   def index
     @articles = Article.all
+    @posts = Post.all
   end
   
   def show
