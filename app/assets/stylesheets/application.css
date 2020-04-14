@@ -61,9 +61,12 @@
   background-color: transparent !important;
   color: black !important;
 }
-
+.btn-outline-dark {
+  border:none !important;
+}
 .btn-outline-dark:hover{
-  color:white !important;
+  color:darkblue !important;
+  background-color: transparent !important;
 }
 .button-see-posts{
   text-decoration: transparent !important;
