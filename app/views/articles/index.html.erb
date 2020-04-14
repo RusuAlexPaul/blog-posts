@@ -4,7 +4,7 @@
     <div class="row justify-content-center text-center">
       <%= image_tag('blogposts-logo-black.svg', {class: 'ml-auto mr-auto', height: '160px'})%>
       <div class="col-12 col-md-8">
-        <%= link_to 'See the article', class: 'btn btn-primary', anchor: 'my_id' %>
+        <a class="btn btn-outline-dark text-decoration-none" href="#posts">See the posts!</a>
       </div>
     </div>
   </div>
@@ -16,25 +16,10 @@
   <%= image_tag('bg.png', {class: 'img-bg'})%>
 </div>
 -->
-<section class="fdb-block" id="my_id">
-  <div class="container">
-    <% @articles.each do |article|%>
-      <div class="card mb-4">
-        <div class="card-header">
-          <%= article.title%>
-        </div>
-        <div class="card-body">
-          <blockquote class="blockquote mb-0">
-            <p><%= article.text  %></p>
-            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-          </blockquote>
-        </div>
-      </div>
-    <% end %>
-  </div>
-</section>
 
-<section class="fdb-block" id="my_id">
+<!-- Here is start the code for showing the posts from Admin Panel -->
+
+<section class="fdb-block" id="posts">
   <div class="container">
     <% @posts.each do |post|%>
       <div class="card mb-4">
@@ -44,7 +29,7 @@
         <div class="card-body">
           <blockquote class="blockquote mb-0">
             <p><%= post.body  %></p>
-            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            <footer class="blockquote-footer"> <cite title="Source Title"><%= post.published_at %></cite></footer>
           </blockquote>
         </div>
       </div>
@@ -52,4 +37,6 @@
   </div>
 </section>
 
+<!--
 <%= link_to 'New Article', new_article_path, class: 'btn btn-primary' %>
+--> 
