@@ -15,48 +15,37 @@
  */
  body, html{
   height: 100%;
+  width: auto;
   margin: 0;
   scroll-behavior: smooth;
-  background-color: #DEDBD0;
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ }
+
+ .fdb-block {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+    padding: 7.5rem 0;
+    width: auto;
+    background-size: cover;
+    background-color: transparent !important;
  }
 
  .bg-navbar{
   background-color: transparent !important;
 }
 
-.fdb-block {
-  background-color: #DEDBD0 !important;
-}
-
-.fdb-block-footer {
-  background-color: darkolivegreen !important;
-}
-
-.fdb-block-index {
-  padding-top: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100%;
-  min-height: 650px;
-}
-
  div {
    display: block;
  }
-.img-bg{
-  padding-top: -1rem;
-  top: 0;
-  opacity: 0.8;
+ .blogpost-logo {
   position: relative;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100%;
-  min-height: 650px;
-}
+  top: 10%;
+ }
+
 .mx-2:hover {
   background-color: transparent !important;
   color: black !important;
