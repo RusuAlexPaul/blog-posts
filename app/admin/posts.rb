@@ -10,7 +10,7 @@ ActiveAdmin.register Post do
     inputs 'Details' do
       input :user
       input :title
-      input :body, as: :ckeditor
+      input :body, as: :quill_editor
     end
     actions
   end
