@@ -5,6 +5,9 @@ class ArticlesController < ApplicationController
     @posts = Post.all
   end
   
+  def contact
+  end
+  
   def show
     @article = Article.find(params[:id])
   end
